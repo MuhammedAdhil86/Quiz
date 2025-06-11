@@ -1,7 +1,7 @@
 
 // ✅ src/pages/ResultPage.jsx
 import { useSelector, useDispatch } from 'react-redux';
-import { resetQuiz, toggleReview } from '../features/quiz/quizslice';
+import { resetQuiz, toggleReview } from '../features/quiz/redux';
 import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import Confetti from 'react-confetti';

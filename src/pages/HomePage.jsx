@@ -51,7 +51,7 @@ function HomePage() {
           className="flex items-center gap-2 text-red-600 hover:text-red-700 font-semibold text-md sm:text-lg transition"
         >
           <FaInstagram className="text-3xl sm:text-4xl text-red-600 animate-pulse" />
-          Follow Developer
+          Follow on instagram
         </motion.a>
       </motion.div>
     </div>
