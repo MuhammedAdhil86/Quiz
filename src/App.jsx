@@ -1,8 +1,8 @@
 // ✅ src/App.jsx
 import { Routes, Route } from 'react-router-dom';
-import HomePage from './pages/HomePage';
-import QuizPage from './pages/QuizPage';
-import ResultPage from './pages/ResulPage';
+import HomePage from './pages/homepage';
+import QuizPage from './pages/quizepage';
+import ResultPage from './pages/resultpage';
 
 function App() {
   return (
