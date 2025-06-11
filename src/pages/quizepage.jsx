@@ -1,6 +1,6 @@
 // ✅ src/pages/QuizPage.jsx
 import { useSelector, useDispatch } from 'react-redux';
-import { answerQuestion, goToNextLevel } from '../features/quiz/quizSlice';
+import { answerQuestion, goToNextLevel } from '../features/quiz/quizslice';
 import { useNavigate } from 'react-router-dom';
 import { motion } from 'framer-motion';
 
