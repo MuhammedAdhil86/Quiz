@@ -29,7 +29,7 @@ src/
 
 ## 🚀 Live Demo
 
-Coming Soon (or include a link if hosted, e.g. on Vercel, Netlify, or GitHub Pages)
+https://quiz-d818-adhils-projects-d600a5f8.vercel.app/
 
 ---
 
