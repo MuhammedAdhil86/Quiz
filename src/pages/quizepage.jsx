@@ -1,13 +1,11 @@
 // ✅ src/pages/QuizPage.jsx
 
-import { useSelector, useDispatch } from 'react-redux';
+import { useSelector, useDispatch } from "react-redux";
 
+import { answerQuestion, goToNextLevel } from "../features/quiz/redux";
 
-import { answerQuestion, goToNextLevel } from '../features/quiz/redux';
-
-
-import { useNavigate } from 'react-router-dom';
-import { motion } from 'framer-motion';
+import { useNavigate } from "react-router-dom";
+import { motion } from "framer-motion";
 
 function QuizPage() {
   const dispatch = useDispatch();
@@ -30,12 +28,14 @@ function QuizPage() {
 
     if (currentIndex === questions.length - 1 && !showNextLevel) {
       // Wait a bit before navigating to results
-      setTimeout(() => navigate('/result'), 700);
+      setTimeout(() => navigate("/result"), 700);
     }
   };
 
   const currentLevel = level;
-  const prevLevelResult = levelResults?.find((res) => res.level === currentLevel);
+  const prevLevelResult = levelResults?.find(
+    (res) => res.level === currentLevel
+  );
   const prevLevelAnswers = userAnswers?.filter((_, idx) => {
     const start = currentLevel * 10;
     const end = (currentLevel + 1) * 10;
@@ -52,7 +52,9 @@ function QuizPage() {
       >
         {!showNextLevel && !completed && currentQuestion && (
           <>
-            <h2 className="text-2xl font-semibold text-blue-800 mb-4">{currentQuestion.question}</h2>
+            <h2 className="text-2xl font-semibold text-blue-800 mb-4">
+              {currentQuestion.question}
+            </h2>
             <div className="space-y-3">
               {currentQuestion.options.map((option) => (
                 <motion.button
@@ -100,11 +102,19 @@ function QuizPage() {
                   <li
                     key={index}
                     className={`mb-3 p-3 rounded border-l-4 shadow-sm ${
-                      item.isCorrect ? 'bg-green-50 border-green-500' : 'bg-red-50 border-red-500'
+                      item.isCorrect
+                        ? "bg-green-50 border-green-500"
+                        : "bg-red-50 border-red-500"
                     }`}
                   >
-                    <p className="font-medium text-gray-800">Q: {item.question}</p>
-                    <p className={`text-sm ${item.isCorrect ? 'text-green-700' : 'text-red-700'}`}>
+                    <p className="font-medium text-gray-800">
+                      Q: {item.question}
+                    </p>
+                    <p
+                      className={`text-sm ${
+                        item.isCorrect ? "text-green-700" : "text-red-700"
+                      }`}
+                    >
                       Your Answer: {item.selected}
                     </p>
                     {!item.isCorrect && (

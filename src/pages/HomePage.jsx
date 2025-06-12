@@ -1,12 +1,12 @@
 // ✅ src/pages/HomePage.jsx
-import { Link } from 'react-router-dom';
-import { motion } from 'framer-motion';
-import { FaInstagram } from 'react-icons/fa';
+import { Link } from "react-router-dom";
+import { motion } from "framer-motion";
+import { FaInstagram } from "react-icons/fa";
 
 function HomePage() {
   return (
     <div className="flex flex-col items-center justify-center min-h-screen bg-gradient-to-br from-blue-50 to-blue-100 text-center px-6 py-12">
-      <motion.h1 
+      <motion.h1
         className="text-4xl sm:text-5xl font-extrabold text-blue-800 mb-6"
         initial={{ opacity: 0, y: -30 }}
         animate={{ opacity: 1, y: 0 }}
@@ -21,13 +21,11 @@ function HomePage() {
         animate={{ opacity: 1 }}
         transition={{ delay: 0.4 }}
       >
-        Test your nursing knowledge with fun and interactive questions. Designed for 2nd semester students to boost confidence and learning.
+        Test your nursing knowledge with fun and interactive questions. Designed
+        for 2nd semester students to boost confidence and learning.
       </motion.p>
 
-      <motion.div
-        whileHover={{ scale: 1.05 }}
-        whileTap={{ scale: 0.95 }}
-      >
+      <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
         <Link
           to="/quiz"
           className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-3 rounded-2xl text-lg shadow-xl transition duration-300"
