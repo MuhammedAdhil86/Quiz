@@ -1,12 +1,64 @@
-# React + Vite
+# 🧠 Nursing Quiz - Semester 2
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+An interactive, animated quiz web application built with React, Redux, and Tailwind CSS. Designed to help 2nd semester nursing students test their knowledge with structured, level-based MCQs.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
 
-## Expanding the ESLint configuration
+src/
+│
+├── pages/               # HomePage, QuizPage, ResultPage
+├── features/
+│   └── quiz/            # Redux slice for quiz logic
+├── components/          # Shared components (if applicable)
+├── assets/              # Images and icons
+├── App.jsx              # Root component
+└── main.jsx             # React entry point
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+
+## 🌟 Features
+
+- ✅ **Level-Based Questions:** Automatically advances to the next level every 10 questions.
+- 📊 **Performance Summary:** View correct/incorrect answers at the end of each level and final score.
+- 🔁 **Review Mode:** Review each question with selected answers and correct ones.
+- 🎉 **Celebration Animation:** Confetti on final result page.
+- 📱 **Responsive Design:** Fully responsive across devices.
+- ⚙️ **Smooth Animations:** Powered by Framer Motion for transitions and button interactions.
+
+---
+
+## 🚀 Live Demo
+
+Coming Soon (or include a link if hosted, e.g. on Vercel, Netlify, or GitHub Pages)
+
+---
+
+## 📦 Tech Stack
+
+| Tech        | Usage                  |
+|-------------|------------------------|
+| **React**   | UI framework           |
+| **Redux**   | State management       |
+| **Tailwind CSS** | Styling          |
+| **Framer Motion** | Animations     |
+| **React Router** | Routing between pages |
+| **Confetti** | Final celebration animation |
+
+---
+
+## 🛠️ Installation
+
+Clone the repository and run the project locally.
+
+```bash
+# Clone the repository
+git clone https://github.com/your-username/nursing-quiz-app.git
+
+# Navigate into the project folder
+cd nursing-quiz-app
+
+# Install dependencies
+npm install
+
+# Start the development server
+npm run dev
